@@ -6,48 +6,48 @@ This repository contains the implementation of CSI-DMT,a network that uses cross
 
 ### Document
 
-`CSI-DMT/`
-`├── .idea/`
-`├── _pycache_/`
-`├── Datasets/`
-`│   ├── Eval/`
-`│          └── Lytro`
-`│                 ├── sourceA/`
-`│                        ├── lytro-01-A.jpg`
-`│                        ├── lytro-02-A.jpg`
-`│                        ├── ...
+CSI-DMT/
+├── .idea/
+├── _pycache\_/
+├── Datasets/
+│   ├── Eval/
+│          └── Lytro
+│                 ├── sourceA/
+│                        ├── lytro-01-A.jpg
+│                        ├── lytro-02-A.jpg
+│                        ├── ...
 │                        ├── lytro-20-A.jpg
-│                 └── sourceB/`
-`│                        ├── lytro-01-B.jpg`
-`│                        ├── lytro-02-B.jpg`
-`│                        ├── ...    
-│                        ├── lytro-20-B.jpg`
-`│   └── Train&Valid/`
-`│          └── DUTS_MFF/`
-`│                 ├── train/`
-`│                        ├── decisionmap/`
-`│                        ├── groundtruth/`
-`│                        ├── sourceA/`
-`│                        └── sourceB/`
-`│                 └── validate`
-`│                        ├── decisionmap/`
-`│                        ├── groundtruth/`
-`│                        ├── sourceA/`
-`│                        └── sourceB/`
-`├── Loss_funcs/`
-`├── Nets/`
-`│   ├── _init_.py`
-`│   ├── CSI_DMT.py`
-`│   ├── DACF.py`
-`│   └── DAMT.py`
-`├── RunTimeData/`
-`│   └── Model weights`
-`│          └── best_network.pth`
-`├── Utilities/`
-`├── Fusion.py`
-`├── image_fusion_gui.py`
-`├── README.md`
-`└── Training.py`
+│                 └── sourceB/
+│                        ├── lytro-01-B.jpg
+│                        ├── lytro-02-B.jpg
+│                        ├── ...    
+│                        ├── lytro-20-B.jpg
+│   └── Train&Valid/
+│          └── DUTS_MFF/
+│                 ├── train/
+│                        ├── decisionmap/
+│                        ├── groundtruth/
+│                        ├── sourceA/
+│                        └── sourceB/
+│                 └── validate
+│                        ├── decisionmap/
+│                        ├── groundtruth/
+│                        ├── sourceA/
+│                        └── sourceB/
+├── Loss_funcs/
+├── Nets/
+│   ├── _init\_.py
+│   ├── CSI_DMT.py
+│   ├── DACF.py
+│   └── DAMT.py
+├── RunTimeData/
+│   └── Model weights
+│          └── best_network.pth
+├── Utilities/
+├── Fusion.py
+├── image_fusion_gui.py
+├── README.md
+└── Training.py
 
 | File name           | Explanation                                                  |
 | ------------------- | ------------------------------------------------------------ |
