@@ -47,7 +47,7 @@ This repository contains the implementation of CSI-DMT,a network that uses cross
 ├── Fusion.py
 ├── image_fusion_gui.py
 ├── README.md
-└── Training.py
+└── Training.py</pre>
 
 | File name           | Explanation                                                  |
 | ------------------- | ------------------------------------------------------------ |
