@@ -6,47 +6,47 @@ This repository contains the implementation of CSI-DMT,a network that uses cross
 
 ### Document
 
-CSI-DMT/<br>
-├── .idea/<br>
-├── _pycache\_/<br>
-├── Datasets/<br>
-│   ├── Eval/<br>
-│          └── Lytro<br>
-│                 ├── sourceA/<br>
-│                        ├── lytro-01-A.jpg<br>
-│                        ├── lytro-02-A.jpg<br>
-│                        ├── ...<br>
-│                        ├── lytro-20-A.jpg<br>
-│                 └── sourceB/<br>
-│                        ├── lytro-01-B.jpg<br>
-│                        ├── lytro-02-B.jpg<br>
-│                        ├── ...    <br>
-│                        ├── lytro-20-B.jpg<br>
-│   └── Train&Valid/<br>
-│          └── DUTS_MFF/<br>
-│                 ├── train/<br>
-│                        ├── decisionmap/<br>
-│                        ├── groundtruth/<br>
-│                        ├── sourceA/<br>
-│                        └── sourceB/<br>
-│                 └── validate<br>
-│                        ├── decisionmap/<br>
-│                        ├── groundtruth/<br>
-│                        ├── sourceA/<br>
-│                        └── sourceB/<br>
-├── Loss_funcs/<br>
-├── Nets/<br>
-│   ├── _init\_.py<br>
-│   ├── CSI_DMT.py<br>
-│   ├── DACF.py<br>
-│   └── DAMT.py<br>
-├── RunTimeData/<br>
-│   └── Model weights<br>
-│          └── best_network.pth<br>
-├── Utilities/<br>
-├── Fusion.py<br>
-├── image_fusion_gui.py<br>
-├── README.md<br>
+<pre>CSI-DMT/
+├── .idea/
+├── _pycache_/
+├── Datasets/
+│   ├── Eval/
+│          └── Lytro
+│                 ├── sourceA/
+│                        ├── lytro-01-A.jpg
+│                        ├── lytro-02-A.jpg
+│                        ├── ...
+│                        ├── lytro-20-A.jpg
+│                 └── sourceB/
+│                        ├── lytro-01-B.jpg
+│                        ├── lytro-02-B.jpg
+│                        ├── ...    
+│                        ├── lytro-20-B.jpg
+│   └── Train&Valid/
+│          └── DUTS_MFF/
+│                 ├── train/
+│                        ├── decisionmap/
+│                        ├── groundtruth/
+│                        ├── sourceA/
+│                        └── sourceB/
+│                 └── validate
+│                        ├── decisionmap/
+│                        ├── groundtruth/
+│                        ├── sourceA/
+│                        └── sourceB/
+├── Loss_funcs/
+├── Nets/
+│   ├── _init_.py
+│   ├── CSI_DMT.py
+│   ├── DACF.py
+│   └── DAMT.py
+├── RunTimeData/
+│   └── Model weights
+│          └── best_network.pth
+├── Utilities/
+├── Fusion.py
+├── image_fusion_gui.py
+├── README.md
 └── Training.py
 
 | File name           | Explanation                                                  |
