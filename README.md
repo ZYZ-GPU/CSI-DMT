@@ -2,20 +2,64 @@
 
 ### Submission to The Visual Computer Journal
 
-This repository contains the implementation of CSI-DMT,a network that uses cross-task semantic interaction and dual-attention mixing transformer for multi-focus image fusion. To evaluate the effectiveness of our method, we compared it with other state-of-the-art methods on four multi-focus image datasets,achieving state-of-the-art results in both subjective visual effects and objective measurement outcomes, while also demonstrating significant advantages in lightweight design and time efficiency.
+This repository contains the implementation of CSI-DMT,a network that uses cross-task semantic interaction and dual-attention mixing transformer for multi-focus image fusion. To evaluate the effectiveness of our method, we compared it with other state-of-the-art methods on four multi-focus image datasets,achieving state-of-the-art results in both subjective visual effects and objective measurement outcomes, while also demonstrating significant advantages in lightweight design and time efficiency. The model weights will be uploaded after the paper is accepted.
 
 ### Document
 
-| File name   | Explanation                              |
-| ----------- | ---------------------------------------- |
-| Datasets    | Training dataset and the testing dataset |
-| Loss_funcs  | Loss function                            |
-| Nets        | Network structure                        |
-| Results     | Test output                              |
-| RunTimeData | Trained model weights                    |
-| Utilities   | Utility function                         |
-| Fusion.py   | For testing                              |
-| Training.py | For training                             |
+CSI-DMT/
+├── .idea/
+├── \_pycache\_/
+├── Datasets/
+│   ├── Eval/
+│          └── Lytro
+│                 ├── sourceA/
+│                        ├── lytro-01-A.jpg
+│                        ├── lytro-02-A.jpg
+│                        ├── ...    
+│                        ├── lytro-20-A.jpg                               
+│                 └── sourceB/
+│                        ├── lytro-01-B.jpg
+│                        ├── lytro-02-B.jpg
+│                        ├── ...    
+│                        ├── lytro-20-B.jpg
+│   └── Train&Valid/
+│          └── DUTS_MFF/
+│                 ├── train/
+│                        ├── decisionmap/
+│                        ├── groundtruth/
+│                        ├── sourceA/
+│                        └── sourceB/
+│                 └── validate
+│                        ├── decisionmap/
+│                        ├── groundtruth/
+│                        ├── sourceA/
+│                        └── sourceB/
+├── Loss_funcs/
+├── Nets/
+│   ├── _init\_.py
+│   ├── CSI_DMT.py
+│   ├── DACF.py
+│   └── DAMT.py
+├── RunTimeData/
+│   └── Model weights
+│          └── best_network.pth
+├── Utilities/
+├── Fusion.py
+├── image_fusion_gui.py
+├── README.md
+└── Training.py
+
+| File name           | Explanation                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| Datasets            | Training dataset and the testing dataset(There are no restrictions on image naming, they just need to correspond one-to-one in the folder) |
+| Loss_funcs          | Loss function                                                |
+| Nets                | Network structure                                            |
+| Results             | Test output                                                  |
+| RunTimeData         | Trained model weights                                        |
+| Utilities           | Utility function                                             |
+| Fusion.py           | For testing                                                  |
+| Training.py         | For training                                                 |
+| image_fusion_gui.py | Graphical user interface                                     |
 
 ### Preparation
 
@@ -23,6 +67,7 @@ This repository contains the implementation of CSI-DMT,a network that uses cross
 
 - python=3.9.21
 - pytorch=2.5.1
+- torchvision =0.20.1
 - numpy=2.0.1
 - opencv=4.10.0.84
 - pillow =11.0.0
@@ -51,6 +96,12 @@ For training, please run:
 For testing, please run:
 
 `python Fusion.py`
+
+### Graphical User Interface
+
+For launching the graphical user interface,please run:
+
+`python image_fusion_gui.py`
 
 ### Results
 
